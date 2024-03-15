@@ -1,0 +1,367 @@
+openapi: 3.0.3
+info:
+  title: Title
+  description: Title
+  version: 1.0.0
+servers:
+  - url: 'https'
+paths:
+  /paiementIrs:
+    get:
+      summary: List all paiementIrs
+      operationId: listPaiementIrs
+      tags:
+        - paiementIrs
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          required: false
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: A paged array of paiementIrs
+          headers:
+            x-next:
+              type: string
+              description: A link to the next page of responses
+          schema:
+            $ref: '#/definitions/PaiementIrs'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      summary: Create a paiementIr
+      operationId: createPaiementIrs
+      tags:
+        - paiementIrs
+      responses:
+        "201":
+          description: Null response
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /paiementIrs/{paiementIrId}:
+    get:
+      summary: Info for a specific paiementIr
+      operationId: showPaiementIrById
+      tags:
+        - paiementIrs
+      parameters:
+        - name: paiementIrId
+          in: path
+          required: true
+          description: The id of the paiementIr to retrieve
+          type: string
+      responses:
+        "200":
+          description: Expected response to a valid request
+          schema:
+            $ref: '#/definitions/PaiementIrs'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /tauxIrs:
+    get:
+      summary: List all tauxIrs
+      operationId: listTauxIrs
+      tags:
+        - tauxIrs
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          required: false
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: A paged array of tauxIrs
+          headers:
+            x-next:
+              type: string
+              description: A link to the next page of responses
+          schema:
+            $ref: '#/definitions/TauxIrs'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      summary: Create a tauxIr
+      operationId: createTauxIrs
+      tags:
+        - tauxIrs
+      responses:
+        "201":
+          description: Null response
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /tauxIrs/{tauxIrId}:
+    get:
+      summary: Info for a specific tauxIr
+      operationId: showTauxIrById
+      tags:
+        - tauxIrs
+      parameters:
+        - name: tauxIrId
+          in: path
+          required: true
+          description: The id of the tauxIr to retrieve
+          type: string
+      responses:
+        "200":
+          description: Expected response to a valid request
+          schema:
+            $ref: '#/definitions/TauxIrs'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /paiementIrDetails:
+    get:
+      summary: List all paiementIrDetails
+      operationId: listPaiementIrDetails
+      tags:
+        - paiementIrDetails
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          required: false
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: A paged array of paiementIrDetails
+          headers:
+            x-next:
+              type: string
+              description: A link to the next page of responses
+          schema:
+            $ref: '#/definitions/PaiementIrDetails'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      summary: Create a paiementIrDetail
+      operationId: createPaiementIrDetails
+      tags:
+        - paiementIrDetails
+      responses:
+        "201":
+          description: Null response
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /paiementIrDetails/{paiementIrDetailId}:
+    get:
+      summary: Info for a specific paiementIrDetail
+      operationId: showPaiementIrDetailById
+      tags:
+        - paiementIrDetails
+      parameters:
+        - name: paiementIrDetailId
+          in: path
+          required: true
+          description: The id of the paiementIrDetail to retrieve
+          type: string
+      responses:
+        "200":
+          description: Expected response to a valid request
+          schema:
+            $ref: '#/definitions/PaiementIrDetails'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /societes:
+    get:
+      summary: List all societes
+      operationId: listSocietes
+      tags:
+        - societes
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          required: false
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: A paged array of societes
+          headers:
+            x-next:
+              type: string
+              description: A link to the next page of responses
+          schema:
+            $ref: '#/definitions/Societes'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      summary: Create a societe
+      operationId: createSocietes
+      tags:
+        - societes
+      responses:
+        "201":
+          description: Null response
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /societes/{societeId}:
+    get:
+      summary: Info for a specific societe
+      operationId: showSocieteById
+      tags:
+        - societes
+      parameters:
+        - name: societeId
+          in: path
+          required: true
+          description: The id of the societe to retrieve
+          type: string
+      responses:
+        "200":
+          description: Expected response to a valid request
+          schema:
+            $ref: '#/definitions/Societes'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  
+
+
+definitions:
+  PaiementIr:
+    type: "object"
+    required:
+      - id
+      - datePaiementIr
+      - totalCotisationPatronal
+      - totalCotisationSalarial
+      - month
+      - year
+      - totalSalaireBrut
+      - totalSalaireNet
+    properties:
+      id:
+        type: int
+      datePaiementIr:
+        type: date
+      totalCotisationPatronal:
+        type: number
+      totalCotisationSalarial:
+        type: number
+      month:
+        type: int
+      year:
+        type: int
+      totalSalaireBrut:
+        type: number
+      totalSalaireNet:
+        type: number
+  PaiementIrs:
+    type: array
+    items:
+      $ref: '#/definitions/PaiementIr'
+  TauxIr:
+    type: "object"
+    required:
+      - id
+      - salaireMin
+      - salaireMax
+      - pourcentage
+      - dateMin
+      - dateMax
+      - cotisationPatronal
+      - cotisationSalarial
+    properties:
+      id:
+        type: int
+      salaireMin:
+        type: number
+      salaireMax:
+        type: number
+      pourcentage:
+        type: number
+      dateMin:
+        type: date
+      dateMax:
+        type: date
+      cotisationPatronal:
+        type: number
+      cotisationSalarial:
+        type: number
+  TauxIrs:
+    type: array
+    items:
+      $ref: '#/definitions/TauxIr'
+  PaiementIrDetail:
+    type: "object"
+    required:
+      - id
+      - employe
+      - salaireBrute
+      - cotisationpatronel
+      - cotoisationsalarial
+      - salaireNet
+    properties:
+      id:
+        type: int
+      employe:
+        type: string
+      salaireBrute:
+        type: number
+      cotisationpatronel:
+        type: number
+      cotoisationsalarial:
+        type: number
+      salaireNet:
+        type: number
+  PaiementIrDetails:
+    type: array
+    items:
+      $ref: '#/definitions/PaiementIrDetail'
+  Societe:
+    type: "object"
+    required:
+      - id
+      - ice
+      - libelle
+    properties:
+      id:
+        type: int
+      ice:
+        type: string
+      libelle:
+        type: string
+  Societes:
+    type: array
+    items:
+      $ref: '#/definitions/Societe'
+
+  Error:
+    type: "object"
+    required:
+      - code
+      - message
+    properties:
+      code:
+        type: integer
+        format: int32
+      message:
+        type: string

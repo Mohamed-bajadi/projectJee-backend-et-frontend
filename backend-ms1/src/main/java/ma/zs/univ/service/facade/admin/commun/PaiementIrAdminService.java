@@ -7,7 +7,7 @@ import ma.zs.univ.zynerator.service.IService;
 
 
 
-public interface PaiementIrAdminService extends  IService<PaiementIr,PaiementIrCriteria>  {
+public interface PaiementIrAdminService extends IService<PaiementIr,PaiementIrCriteria>  {
 
     List<PaiementIr> findBySocieteId(Long id);
     int deleteBySocieteId(Long id);

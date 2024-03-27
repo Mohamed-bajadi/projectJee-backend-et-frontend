@@ -1,20 +1,43 @@
+
 package ma.zs.univ.bean.core.commun;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import ma.zs.univ.bean.core.avancement.Societe;
+import ma.zs.univ.ws.dto.avancement.SocieteDto;
+import ma.zs.univ.zynerator.audit.AuditBusinessObject;
 
 @Entity
 
-public class Employe {
+public class Employe extends AuditBusinessObject {
    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
    private Long id;
    private String code;
    private String firstname;
    private String lastname;
+   @ManyToOne
+   private Societe societe;
 
-   public long getId() {
+   public void setId(Long id) {
+      this.id = id;
+   }
+
+   public String getCode() {
+      return code;
+   }
+
+   public void setCode(String code) {
+      this.code = code;
+   }
+
+   public Societe getSociete() {
+      return societe;
+   }
+
+   public void setSociete(Societe societe) {
+      this.societe = societe;
+   }
+
+   public Long getId() {
       return id;
    }
 

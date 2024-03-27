@@ -1,21 +1,21 @@
 package ma.zs.univ.dao.facade.core.commun;
 
 
+
+
 import ma.zs.univ.bean.core.commun.Employe;
-import org.springframework.data.jpa.repository.JpaRepository;
+import ma.zs.univ.bean.core.commun.PaiementIr;
+import ma.zs.univ.zynerator.repository.AbstractRepository;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
 @Repository
-public interface EmployeDao extends JpaRepository<Employe,Long> {
+public interface EmployeDao extends AbstractRepository<Employe,Long> {
 
-    Employe findById(long id);
-    @Transactional
-    int deleteById(long id) ;
-
-    List<Employe> findByFirstnameLike(String firstname);
+    List<Employe> findBySocieteId(Long id);
+    int deleteBySocieteId(Long id);
+    long countBySocieteId(Long id);
 
 }
 

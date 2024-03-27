@@ -24,7 +24,7 @@ import java.math.BigDecimal;
 @Table(name = "taux_ir")
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @SequenceGenerator(name="taux_ir_seq",sequenceName="taux_ir_seq",allocationSize=1, initialValue = 1)
-public class TauxIr   extends AuditBusinessObject     {
+public class TauxIr  extends AuditBusinessObject     {
 
     private Long id;
 

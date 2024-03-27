@@ -1,0 +1,12 @@
+
+\
+java:S1161 ":Add the "@Override" annotation above this method signature(²¦ž÷ûÿÿÿÿ8ÖðÅ•ä1
+\
+java:S1128
+"?Remove this unused import 'ma.zs.univ.zynerator.util.ListUtil'.(îç‰Ÿ8ÚªÈ•ä1
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ÛªÈ•ä1
+u
+java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡ž¸Îùÿÿÿÿ8ÛªÈ•ä1
+@
+java:S1128"Remove this duplicated import.(Õë±Äøÿÿÿÿ8ÝƒÈ•ä1

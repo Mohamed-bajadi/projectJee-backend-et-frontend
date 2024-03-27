@@ -130,6 +130,8 @@ public class UnivApplication {
         modelPermissions.add(new ModelPermission("TauxIr"));
         modelPermissions.add(new ModelPermission("PaiementIrDetail"));
         modelPermissions.add(new ModelPermission("Societe"));
+        modelPermissions.add(new ModelPermission("Employe"));
+        modelPermissions.add(new ModelPermission("EmployeSalaireHistory"));
         modelPermissions.add(new ModelPermission("User"));
         modelPermissions.add(new ModelPermission("ModelPermission"));
         modelPermissions.add(new ModelPermission("ActionPermission"));

@@ -1,0 +1,19 @@
+
+X
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ
+X
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ
+h
+java:S3776""RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(È¼åœ
+m
+java:S3776D"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(™ĞÒÿÿÿÿÿ
+U
+java:S1161c":Add the "@Override" annotation above this method signature(£¸„•ùÿÿÿÿ
+U
+java:S1161m":Add the "@Override" annotation above this method signature(·ıøÿÿÿÿ
+o
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(æ®ÉÄÿÿÿÿÿ
+j
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(ôá•Ç
+Z
+java:S1128"?Remove this unused import 'ma.zs.univ.zynerator.util.DateUtil'.(Ê”µøÿÿÿÿ

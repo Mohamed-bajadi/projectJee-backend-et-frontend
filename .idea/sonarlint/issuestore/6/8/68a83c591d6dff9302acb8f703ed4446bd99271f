@@ -1,0 +1,36 @@
+
+j
+java:S1104!"OMake ctx a static final constant or non-public and provide accessors if needed.(Ø­Àæþÿÿÿÿ
+D
+java:S1444!")Make this "public static ctx" field final(Ø­Àæþÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(›ÃÞýÿÿÿÿ
+H
+java:S1611:"2Remove the parentheses around the "args" parameter(£Ù€ò
+J
+java:S1172i"4Remove this unused method parameter "attributeName".(ð–Ñå
+J
+java:S1172l"4Remove this unused method parameter "attributeName".(é–é¹
+H
+java:S1172p"4Remove this unused method parameter "attributeName".(ï¹w
+J
+java:S1172t"4Remove this unused method parameter "attributeName".(Â×»Ê
+J
+java:S1172x"4Remove this unused method parameter "attributeName".(Æ®Ô…
+C
+java:S1125y"(Remove the unnecessary boolean literals.(Üø¾ˆýÿÿÿÿ
+I
+java:S1172{"4Remove this unused method parameter "attributeName".(¾Òú
+E
+java:S1144e"/Remove this unused private "fakeString" method.(€€§¶
+C
+java:S1144i"-Remove this unused private "fakeLong" method.(ð–Ñå
+F
+java:S1144l"0Remove this unused private "fakeInteger" method.(é–é¹
+C
+java:S1144p"/Remove this unused private "fakeDouble" method.(ï¹w
+I
+java:S1144t"3Remove this unused private "fakeBigDecimal" method.(Â×»Ê
+F
+java:S1144x"0Remove this unused private "fakeBoolean" method.(Æ®Ô…
+K
+java:S1144{"6Remove this unused private "fakeLocalDateTime" method.(¾Òú

@@ -1,0 +1,14 @@
+
+X
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ
+X
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ
+x
+java:S3305"]Inject this field value directly into "authenticationProvider", the only method that uses it.(Ò±™Ãÿÿÿÿÿ
+h
+java:S3305"RInject this field value directly into "filterChain", the only method that uses it.(†€Ú³
+S
+java:S1611<"=Remove the parentheses around the "securityContext" parameter(¥ž½Ø
+[
+java:S1128
+"@Remove this unused import 'org.springframework.http.HttpMethod'.(Ê¨Ä¡øÿÿÿÿ

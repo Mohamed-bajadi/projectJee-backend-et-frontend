@@ -29,7 +29,6 @@ public class SocieteAdminServiceImpl extends AbstractServiceImpl<Societe, Societ
 
 
 
-
     public List<Societe> findAllOptimized() {
         return dao.findAllOptimized();
     }
